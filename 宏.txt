@@ -1,0 +1,26 @@
+Sub 宏1()
+Dim I As Long
+Dim eq As Long
+Dim getstart As Long
+Dim temp_n As Long
+I = 1
+temp_n = 0
+getstart = 100000
+'开始编号
+eq = 5000
+'等差编号
+Dim temp As Long
+For y = I To 100000
+'需要的数量
+temp = getstart
+ For x = temp_n To 4
+    Cells(I, 1).Select
+    ActiveCell = temp
+    temp = temp + eq
+    I = I + 1
+    Next
+    getstart = getstart + 1
+    Next
+
+   
+End Sub
